@@ -6,4 +6,6 @@ function Tiger(name)
 Tiger.prototype.eat = function(dog)
 {
     this.stomach.push(dog);
+    dog.dead = true;
 }
+module.exports = Tiger;
